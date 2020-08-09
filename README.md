@@ -9,6 +9,7 @@
 * C#
 * .NET
 * UWP
+* [MvvmLight] (https://www.nuget.org/packages/MvvmLight)
 
 ## Скриншоты
 ![](/preview/main-light.jpg)
