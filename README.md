@@ -12,7 +12,7 @@
 
 ## Скриншоты
 ![](/preview/main-light.jpg)
-![](/preview/list-light.png)
+![](/preview/list-light.jpg)
 ![](/preview/main-dark.jpg)
 ![](/preview/list-dark.jpg)
 
