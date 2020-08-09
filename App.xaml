@@ -2,6 +2,9 @@
     x:Class="currency_converter.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:currency_converter">
-
+    xmlns:local="using:currency_converter"
+    xmlns:viewModels="using:currency_converter.ViewModels">
+    <Application.Resources>
+        <viewModels:ViewModelLocator xmlns:vm="using:currency_converter.ViewModels" x:Key="Locator" />
+    </Application.Resources>
 </Application>
