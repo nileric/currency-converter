@@ -10,6 +10,8 @@
 * .NET
 * UWP
 * [MvvmLight](https://www.nuget.org/packages/MvvmLight)
+* Entity Framework
+* SQLite
 
 ## Скриншоты
 ![](/preview/main-light.jpg)

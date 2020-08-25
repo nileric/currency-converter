@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Windows.Input;
-using Windows.UI.Notifications;
-using currency_converter.Repository;
+﻿using currency_converter.Repository;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Messaging;
 using GalaSoft.MvvmLight.Views;
+using System.Collections.Generic;
+using System.Windows.Input;
 
 namespace currency_converter.ViewModels
 {
