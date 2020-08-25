@@ -1,4 +1,6 @@
-﻿using currency_converter.Views;
+﻿using currency_converter.DAL;
+using currency_converter.Views;
+using Microsoft.EntityFrameworkCore;
 using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -21,6 +23,11 @@ namespace currency_converter
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            using(var db = new CurrencyContext())
+            {
+                db.Database.Migrate();
+            }
         }
 
         /// <summary>
@@ -62,6 +69,9 @@ namespace currency_converter
                 // Ensure the current window is active
                 Window.Current.Activate();
             }
+
+            Windows.Storage.StorageFolder local = Windows.Storage.ApplicationData.Current.LocalFolder;
+            System.Diagnostics.Debug.WriteLine("Local: " + local.Path);
         }
 
         /// <summary>

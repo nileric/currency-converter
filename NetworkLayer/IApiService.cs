@@ -1,11 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace currency_converter.Network
 {
     public interface IApiService
     {
         Task<Response> GetResponseAsync();
+
+        Task<ValuteResponse> GetValuteResponseAsync(string charCode);
     }
 }
